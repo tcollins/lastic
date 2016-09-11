@@ -19,8 +19,11 @@ $ npm install lastic -g
 # show the help
 $ lastic --help
 
+# config it
+$ lastic save-defaults -m GET -h search-es-87sdgf8s.us-east-1.es.amazonaws.com -s https -a
+
 # use it
-$ lastic get -h localhost -p /users/user/_search -s http -b "{\"query\": {\"match\": {\"name\": \"fred\"}}}"
+$ lastic -p /users/user/_search?q=name:fred -o table -f name,email,age
 
 ```
 

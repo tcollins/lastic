@@ -2,10 +2,8 @@
   "name": "lastic",
   "version": "1.0.0",
   "description": "A command line tool for Elastic Search with AWS support",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Tim Collins <timmyc8m@yahoo.com>",
+  "license": "MIT",
   "keywords": [
     "elasticsearch",
     "cli",
@@ -13,8 +11,18 @@
     "elastic",
     "search"
   ],
-  "author": "Tim Collins <timmyc8m@yahoo.com>",
-  "license": "MIT",
+  "preferGlobal": true,
+  "main": "index.js",
+  "bin": {
+    "lastic": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tcollins/lastic.git"
+  },
   "dependencies": {
     "aws-sdk": "2.6.1",
     "aws4": "1.4.1",
