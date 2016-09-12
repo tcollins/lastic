@@ -1,14 +1,14 @@
 # Lastic
 
-### A command line tool for Elastic Search with AWS support
+### A command line tool for Elasticsearch with AWS support
 
 ### What's Lastic?
 
-Lastic is a command line tool that allows you to make Elastic Search API calls.  
+Lastic is a command line tool that allows you to make Elasticsearch API calls.  
 
 ### Why does this exist?  Why not just use curl?
 
-Lastic exists to make it easy to send curl like requests to the AWS Elastic Search service which requires AWS Signature Version 4 to authenticate. Also, since this tool is Elastic Search specific it includes some specific features to make working with Elastic Search easier.
+Lastic exists to make it easy to send curl like requests to the AWS Elasticsearch service which requires AWS Signature Version 4 to authenticate. Also, since this tool is Elasticsearch specific it includes some specific features to make working with Elasticsearch easier.
 
 ### Usage
 
