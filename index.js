@@ -15,7 +15,8 @@ program._name = 'lastic';
 var desc = [];
 desc.push('Lastic Commands:\n');
 desc.push('\n');
-desc.push('    save-defaults  :  Save default flag values    : lastic save-defaults -h localhost -s http --aws4\n');
+desc.push('    save-defaults  :  Save default flag values      : lastic save-defaults -h localhost -s http --aws4\n');
+desc.push('    show-defaults  :  Display the current defaults  : lastic show-defaults\n');
 desc.push('\n\n');
 desc.push('  Examples:\n');
 desc.push('\n');
@@ -85,6 +86,9 @@ switch(cmdValue) {
     case 'save-defaults':
         catchAndLogError(service.saveDefaults(buildArgs()));
         break;
+    case 'show-defaults':
+      catchAndLogError(service.showDefaults(buildArgs()));
+      break;
     default:
         console.log(' ');
         console.log(style.error('  Invalid command!    "' + cmdValue + '" is not a valid command'));
